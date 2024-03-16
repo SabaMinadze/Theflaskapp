@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<style>
+    body{
+    background-color: rgb(19, 89, 151);
+}
+
+
+.box{
+    height:200px;
+    width: 540px;
+    background-color: chocolate;
+    margin-left: 550px;
+    margin-top: 200px;
+    border-radius: 10px;
+ 
+}
+
+.inp{
+    height: 60px;
+    width: 180px;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+
+}
+
+.sub{
+    height: 60px;
+    width: 111px;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+
+}
+
+.hh{
+    text-align: center;
+}
+
+.bla{
+    text-align: center;
+}
+
+
+
+</style>
+
+
+<div class="box">
+    <form action="/result" method="post" id="cont">
+        <h1 class="hh">Pythagorean calculator</h1>
+        <div class="bla">
+        <input type="text" name="a" placeholder="Enter a" class="inp" required />
+        <input type="text" name="b" placeholder="Enter b" class="inp" required />
+        <input type="submit" class="sub">
+        </div>
+    </form>
+</div>
+
+
+{% endblock %}

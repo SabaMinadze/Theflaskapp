@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<style>
+    body{
+    background-color: rgb(19, 89, 151);
+}
+
+.bx{
+    height:100px;
+    width: 285px;
+    background-color: rgb(210, 30, 30);
+    margin-left: 670px;
+    margin-top: 280px;
+    border-radius: 10px;
+}
+
+.t{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+</style>
+
+
+<div class="bx">
+    <h1 class="t">Answer is: {{ c }}</h1>
+    </div>
+
+{% endblock %}
