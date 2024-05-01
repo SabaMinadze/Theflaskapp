@@ -35,9 +35,9 @@ def heron():
                 p1 = int(p1)
                 answ = sqrt(p1 * (p1 - a1) * (p1 - b1) * (p1 - c1))
                 return render_template("heron.html", answ=answ)
+        
 
-
-
+      
 
 
 if __name__ == '__main__':
